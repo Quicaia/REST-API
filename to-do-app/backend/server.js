@@ -26,6 +26,6 @@ app.get('/tarefas', (req, res) => {
     res.status(204).send();
   });
   
-  app.listen(3000, () => {
-    console.log('API rodando em http://localhost:3000');
+  app.listen(5500, () => {
+    console.log('API rodando em http://localhost:5500');
   });
