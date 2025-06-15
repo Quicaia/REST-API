@@ -21,11 +21,12 @@ app.get('/tarefas', (req, res) => {
   });
   
   app.delete('/tarefas/:id', (req, res) => {
+
     const id = Number(req.params.id);
     tarefas = tarefas.filter(t => t.id !== id);
     res.status(204).send();
   });
   
-  app.listen(5500, () => {
-    console.log('API rodando em http://localhost:5500');
+  app.listen(3000, () => {
+    console.log('API rodando em http://localhost:3000');
   });
